@@ -1,0 +1,43 @@
+{% extends "base2.html" %}
+{% block MainContent %}
+<style>
+  html{
+    font-family: Cabin;
+  }
+  h1{
+      color: rgba(45, 47, 52, 1);
+    }
+    label{
+        font-family: cabin;
+        font-weight: bold;
+    }
+</style>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" style="justify-content: center;">
+        <h1 class="h2" style="font-family: cabin;">Track your history</h1>
+      </div>
+      <div class=".d-flex row" style="justify-content: center;";>
+        <div class= "card" style="background-color: white; width: 800px; padding-left: 100px;padding-top: 50px; padding-bottom: 50px;" >
+          <table style="color:rgba(45, 47, 52, 1) ; font-family: Cabin;">
+            <tr>
+              <th>Date</th>
+              <th>Calories</th>
+              <th>Carbohydrates</th>
+              <th>Proteins</th>
+              <th>Fats</th>
+            </tr>
+            <tr>
+              <td><a href="" style="color: rgba(45, 47, 52, 1);">16-11-2022</a></td>
+              <td>1500 Kcals</td>
+              <td>500 Kcals</td>
+              <td>800 Kcals</td>  
+              <td>300 Kcals</td>
+            </tr>
+          </table>
+        </div>
+  <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+</main>
+
+</body>
+</html>
+{% endblock %}
