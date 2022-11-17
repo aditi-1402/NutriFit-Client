@@ -1,0 +1,58 @@
+{% extends "base2.html" %}
+{% block MainContent %}
+<style>
+  html{
+    font-family: Cabin;
+  }
+  h1{
+      color: rgba(45, 47, 52, 1);
+    }
+    label{
+        font-family: cabin;
+        font-weight: bold;
+    }
+</style>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" style="justify-content: center;">
+        <h1 class="h2" style="font-family: cabin;">Latest Articles</h1>
+      </div>
+            <!--BLOGS/ARTICLES-->
+            <div class="container ">
+                <div class="container .d-flex" style="display: flex;justify-content: space-evenly;">
+                  <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img class="card-img-top" src='{{ url_for("static", filename="images/blog-1.png") }}' alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">What Your Doctor Doesn’t Know About Nutrition</h5>
+                      <p class="card-text" style="color: rgba(63, 73, 83, 0.8); font-size:13px ;">Doctors are especially skilled at a few things. Prescribing medications? Absolutely. 
+                        Performing surgery? For sure. Nutrition and weight loss? No, definitely not.</p>
+                      <a href="#" style="color: #7C2F45;">Read more</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;margin-right: 10px;">
+                    <img class="card-img-top" src='{{ url_for("static", filename="images/blog-2.png") }}' alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">How to Eat for Max Nutrition</h5>
+                      <p class="card-text" style="color: rgba(63, 73, 83, 0.8); font-size:13px ;">Rice and beans, guacamole and salsa, olive oil and tomatoes: Traditional food pairings that 
+                        date back thousands of years may seem like simple culinary staples, but to food researchers...</p>
+                      <a href="#" style="color: #7C2F45;">Read more</a>
+                    </div>
+                  </div>
+            
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src='{{ url_for("static", filename="images/blog-3.png") }}' alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">How to Become a 80/20 Vegan Flexitarian for Optimal Nutrition</h5>
+                      <p class="card-text" style="color: rgba(63, 73, 83, 0.8); font-size:13px ;" >There’s a lot of controversy over diets, including the decision to become vegan. 
+                        I’m not here to talk anyone into a particular diet choice. 
+                      </p>
+                      <a href="#" style="color: #7C2F45;">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+</main>
+
+</body>
+</html>
+{% endblock %}

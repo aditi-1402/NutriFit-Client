@@ -4,7 +4,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("article1.html")
 
 @views.route('/dashboard')
 def dashboard():
@@ -21,3 +21,7 @@ def reports():
 @views.route('/custom_meals')
 def custom_meals():
     return render_template("custom_meals.html")
+
+@views.route('/articles')
+def articles():
+    return render_template("articles.html")
