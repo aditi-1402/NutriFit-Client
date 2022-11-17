@@ -14,7 +14,7 @@
 </style>
 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
     <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" style="justify-content: center;">
-        <h1 class="h2" style="font-family: cabin;">Add a Meal</h1>
+        <h1 class="h2" style="font-family: cabin;">Add a Customised Meal</h1>
       </div>
       <div class=".d-flex row" style="justify-content: center;";>
         <div class= "card" style="background-color: #F8F9FA; width: 800px; padding-left: 250px;padding-top: 50px; padding-bottom: 50px;" >
@@ -28,9 +28,17 @@
                   <input type="text" class="form-control" id="name" placeholder="Salad" style="width: 50%;">
                 </div>
                 <div class="form-group">
-                    <label for="image">Upload a picture of your meal</label>
-                    <input type="file" class="form-control-file" id="image" style="width: 50%;">
-                  </div>
+                    <label for="carbs">Enter Carbohydrate content</label>
+                    <input type="text" class="form-control" id="carbs" style="width: 50%;" placeholder="300 kcals">
+                </div>
+                <div class="form-group">
+                    <label for="proteins">Enter Protein content</label>
+                    <input type="text" class="form-control" id="proteins" style="width: 50%;" placeholder="200 kcals">
+                </div>
+                <div class="form-group">
+                    <label for="fats">Enter Fat content</label>
+                    <input type="text" class="form-control" id="fats" style="width: 50%;" placeholder="150 kcals">
+                </div>
                 <button type="submit" class="btn btn-primary" style="background-color: #7C2F45; border:#7C2F45;width: 150px;height: 45px; font-size: 16px; font-weight: medium;">Submit</button>
               </form>
         </div>

@@ -17,3 +17,7 @@ def add_food():
 @views.route('/reports')
 def reports():
     return render_template("reports.html")
+
+@views.route('/custom_meals')
+def custom_meals():
+    return render_template("custom_meals.html")
